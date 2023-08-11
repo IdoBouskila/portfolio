@@ -1,0 +1,143 @@
+:root {
+    --bg-color: #88a8bf
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--bg-color);
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    backdrop-filter: blur(15rem);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    opacity: 0.6;
+    background: url('../assets/images/noise.png') repeat;
+}
+
+a {
+    cursor: pointer;
+}
+
+section {
+    height: 100vh;
+    padding: 1.5rem;
+}
+
+.root {
+    position: relative;
+}
+
+.blob {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    height: 50rem;
+    translate: -50% -50%;
+    aspect-ratio: 1;
+    border-radius: 40%;
+    filter: blur(60rem);
+    background: conic-gradient(from 0.9turn, #FF4318 0deg, #73e0a9 250deg, #fff 360deg);
+    animation: grow 17.5s infinite;
+    z-index: -2;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero header .logo {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+}
+
+.hero header .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero header .contact-btn {
+    display: grid;
+    padding: 0.7rem 1.25rem;
+    place-items: center;
+    border-radius: 12rem;
+    background: #fff;
+}
+
+.hero .hero-text-container {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    inset: 50% 0 0 50%;
+    translate: -50% -50%;
+    text-align: center;
+}
+
+.hero .hero-text-container small {
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 0.5rem;
+    text-stroke: 1px rgba(255, 255, 255, 0.5);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.hero .hero-text-container h1 {
+    line-height: 1;
+    font-size: 10.5rem;
+}
+
+.hero .hero-text-container h2 {
+    font-size: 4rem;
+}
+
+.hero .hero-text-container h1,
+.hero-text-container h2 {
+    font-weight: 700;
+    background: linear-gradient(112deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.05) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px #fff;
+    filter: drop-shadow(0 5px 2px rgba(0, 0, 0, 0.2));
+}
+
+@keyframes grow {
+    0% {
+        scale: 1;
+    }
+    
+    50% {
+        scale: 1 1.25;
+    }
+    
+    100% {
+        scale: 1;
+    }
+}
