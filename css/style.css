@@ -1,5 +1,7 @@
 :root {
-    --bg-color: #88a8bf
+    --bg-color: #88a8bf;
+    --orange-color: #ff4318;
+    --green-color: #73e0a9;
 }
 
 * {
