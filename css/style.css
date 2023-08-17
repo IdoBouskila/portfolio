@@ -49,14 +49,13 @@ section {
 
 .blob {
     position: fixed;
-    left: 50%;
-    top: 50%;
-    height: 50rem;
+    height: 45rem;
+    inset: 50% 0 0 50%;
     translate: -50% -50%;
     aspect-ratio: 1;
     border-radius: 40%;
     filter: blur(60rem);
-    background: conic-gradient(from 0.9turn, #FF4318 0deg, #73e0a9 250deg, #fff 360deg);
+    background: conic-gradient(from 0.9turn, var(--orange-color) 0deg, var(--green-color) 250deg, #fff 360deg);
     animation: grow 17.5s infinite;
     z-index: -2;
 }
