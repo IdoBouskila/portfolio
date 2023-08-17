@@ -62,8 +62,11 @@ section {
 }
 
 .hero {
+    position: relative;
     display: flex;
+    text-align: center;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .hero header {
@@ -92,15 +95,13 @@ section {
 }
 
 .hero .hero-text-container {
-    position: absolute;
     width: 100%;
     height: fit-content;
-    inset: 50% 0 0 50%;
-    translate: -50% -50%;
     text-align: center;
 }
 
-.hero .hero-text-container small {
+.hero .hero-text-container small,
+.hero .scroll-text {
     font-size: 1.5rem;
     font-weight: 100;
     letter-spacing: 0.5rem;
@@ -128,6 +129,49 @@ section {
     text-stroke: 1px #fff;
     -webkit-text-stroke: 1px #fff;
     filter: drop-shadow(0 5px 2px rgba(0, 0, 0, 0.2));
+}
+
+.hero .scroll-text {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 0;
+    gap: 0.5rem;
+}
+
+.hero .scroll-text .scroll-icon {
+    position: relative;
+    display: inline-block;
+    width: 1.1rem;
+    height: 2.2rem;
+    border-radius: 20rem;
+    border: 1px solid #fff;
+}
+
+.hero .scroll-text .scroll-icon::before{
+    content: '';
+    position: absolute;
+    inset: 50% 0 0 50%;
+    width: 4px;
+    height: 4px;
+    rotate: -135deg;
+    translate: -50% -50%;
+    border:  1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 0;
+    border-right: 0;
+    animation: scroll .8s infinite alternate ease-in-out;
+}
+
+@keyframes scroll {
+    0% {
+        translate: -50% 0;
+    }
+    
+    100% {
+        translate: -50% 100%;
+    }
 }
 
 @keyframes grow {
