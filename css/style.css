@@ -22,7 +22,7 @@ body::after {
     position: fixed;
     inset: 0;
     z-index: -1;
-    backdrop-filter: blur(15rem);
+    backdrop-filter: blur(6rem);
 }
 
 body::before {
@@ -54,7 +54,7 @@ section {
     translate: -50% -50%;
     aspect-ratio: 1;
     border-radius: 40%;
-    filter: blur(60rem);
+    filter: blur(5rem);
     background: conic-gradient(from 0.9turn, var(--orange-color) 0deg, var(--green-color) 250deg, #fff 360deg);
     animation: grow 17.5s infinite;
     z-index: -2;
