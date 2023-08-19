@@ -39,8 +39,9 @@ a {
 }
 
 section {
+    --padding: 1.5rem;
     height: 100vh;
-    padding: 1.5rem;
+    padding: var(--padding);
 }
 
 .root {
