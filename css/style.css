@@ -101,6 +101,7 @@ section {
 
 .hero .hero-text-container small,
 .hero .scroll-text {
+    display: block;
     font-size: 1.5rem;
     font-weight: 100;
     letter-spacing: 0.5rem;
@@ -112,6 +113,16 @@ section {
 .hero .hero-text-container h1 {
     line-height: 1;
     font-size: 10.5rem;
+}
+
+.hero-text-container h1,
+.hero-text-container h2,
+.hero-text-container small {
+    overflow: hidden;
+}
+
+.hero .hero-text-container .char {
+    translate: 0 115%;
 }
 
 .hero .hero-text-container h2 {
