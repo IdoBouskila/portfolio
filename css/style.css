@@ -309,6 +309,69 @@ section.projects {
     border-radius: 1.75rem;
 }
 
+section.contact {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact h1,
+.contact h2 {
+    line-height: 0.85;
+    font-size: 8rem;
+    font-weight: 800;
+    word-spacing: 100vw;
+    background: linear-gradient(90deg, #F7DFD9 0%, #FFA78F 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.5));
+    overflow: hidden;
+}
+
+.contact h2 {
+    font-size: 8rem;
+    font-weight: 200;
+    word-spacing: normal;
+    overflow: hidden;
+}
+
+.contact .links-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact .links-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1.2rem;
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(314deg, #FFA78F 0%, rgba(255, 255, 255, 0.34) 46.18%, #FFA78F 100%);
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.5));
+}
+
+.contact .links-container a img {
+    width: 50%;
+    aspect-ratio: 1;
+}
+
+.credit-container {
+    padding: 1rem 0;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.credit-container span {
+    color: var(--bg-color);
+}
+
 @keyframes scroll {
     0% {
         translate: -50% 0;
