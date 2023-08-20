@@ -1,12 +1,12 @@
 // Hero Text Character Reveal Animation
-const heroHeaders = new SplitType('.hero-text-container *')
+const heroHeaders = new SplitType('.hero-text-container *');
 
 gsap.to('.hero-text-container .char', {
     y: 0,
     stagger: 0.05,
     delay: 0.2,
     duration: .5
-})
+});
 
 // Hero Text Scroll Animation
 gsap.set('.hero-text-container, .scroll-text', { yPercent: 0 });
