@@ -174,6 +174,141 @@ section {
     animation: scroll .8s infinite alternate ease-in-out;
 }
 
+section.projects {
+    position: relative;
+    height: auto;
+    padding: var(--padding) 0;
+    isolation: isolate;
+    overflow-x: clip;
+}
+
+.background-text {
+    position: absolute;
+    top: 3.5%;
+    width: 100%;
+    rotate: -9deg;
+    white-space: nowrap;
+    overflow: hidden;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+    text-stroke: 1px rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+.background-text h1 {
+    display: block;
+    line-height: 0.8;
+    font-size: 8rem;
+    font-weight: 700;
+}
+
+.projects-container {
+    padding: var(--padding);
+    display: flex;
+}
+
+.projects-left-side,
+.projects-right-side {
+    flex: 1;
+}
+
+.projects-left-side .projects-details {
+    display: grid;
+    height: 100vh;
+    text-align: center;
+    place-items: center;
+    color: #fff;
+}
+
+.projects-container .projects-details div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    width: 70%;
+}
+
+.projects-left-side h2 {
+    position: relative;
+    font-weight: 700;
+    font-size: 4rem;
+    width: fit-content;
+    -webkit-text-stroke: 1px #fff;
+    text-stroke: 1px #fff;
+    background: linear-gradient(112deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.20) 0.01%, rgba(255, 255, 255, 0.05) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.5));
+    line-height: 100%;
+}
+
+.projects-left-side h2::after {
+    content: '';
+    position: relative;
+    inset: auto auto 0 50%;
+    translate: -50% 0%;
+    display: block;
+    height: 2px;
+    width: 30%;
+    background: rgba(255, 255, 255, 0.51);
+    margin-top: 15px;
+}
+
+.projects-left-side p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-shadow: 0px 4px 13px rgba(0, 0, 0, 0.75);
+    
+}
+
+.projects-left-side a {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 1.75rem;
+    padding: 0.5rem 2rem;
+    width: fit-content;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(314deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.31) 46.18%, rgba(255, 255, 255, 0.50) 100%);
+
+}
+
+.projects-container .projects-right-side {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.projects-container .projects-right-side .glass-box {
+    display: grid;
+    width: 40rem;
+    height: 40rem;
+    place-items: center;
+    border-radius: 1.75rem;
+    background: linear-gradient(314deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.45) 100%);
+    box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(40px);
+    overflow: hidden;
+}
+
+.projects-container .glass-box div {
+    display: grid;
+    width: 90%;
+    aspect-ratio: 16 / 9;
+    border-radius: 1.75rem;
+    overflow: hidden;
+    box-shadow: 0px 11px 30px 12px rgba(0, 0, 0, 0.5);
+}
+
+.projects-container .glass-box img {
+    grid-area: 1 / 1;
+    box-shadow: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.75rem;
+}
+
 @keyframes scroll {
     0% {
         translate: -50% 0;
