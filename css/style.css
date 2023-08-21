@@ -75,9 +75,27 @@ section {
 }
 
 .hero header .logo {
+    position: relative;
     display: inline-block;
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    isolation: isolate;
+}
+
+.hero header .logo::before,
+.hero header .logo::after {
+    content: '';
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(from 0.9turn, var(--orange-color) 0deg, var(--green-color) 250deg, #fff 360deg);
+    z-index: -1;
+}
+
+.hero header .logo::before {
+    filter: blur(10px);
 }
 
 .hero header .logo img {
@@ -90,7 +108,10 @@ section {
     padding: 0.7rem 1.25rem;
     place-items: center;
     border-radius: 12rem;
-    background: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: linear-gradient(314deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.2) 46.18%, rgba(255, 255, 255, 0.3) 100%);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+    color: #fff;
 }
 
 .hero .hero-text-container {
