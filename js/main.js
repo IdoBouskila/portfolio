@@ -21,7 +21,8 @@ function raf(time) {
     requestAnimationFrame(raf);
 }
 
-requestAnimationFrame(raf)
+// navigate to contact section
+contactButton.addEventListener('click', () => lenis.scrollTo('#contact'));
 
 function _(selector) {
     return document.querySelector(selector);
