@@ -228,6 +228,17 @@ section.projects {
     width: 70%;
 }
 
+.projects-container div.links {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.projects-container .links img {
+    width: 1.2rem;
+    height: 1.2rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 .projects-left-side h2 {
     position: relative;
     font-weight: 700;
@@ -263,6 +274,10 @@ section.projects {
 }
 
 .projects-left-side a {
+    display: flex;
+    align-items: center;
+    gap: 0.4ch;
+    color: #fff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
     font-size: 1.2rem;
     font-weight: 500;
