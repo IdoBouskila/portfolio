@@ -1,3 +1,4 @@
+const contactButton = _('.contact-btn');
 const blob = _('.blob');
 
 window.addEventListener('pointermove', (e) => {
@@ -33,7 +34,7 @@ gsap.ticker.add((time)=>{
 gsap.ticker.lagSmoothing(0);
 
 // navigate to contact section
-contactButton.addEventListener('click', () => lenis.scrollTo('#contact'));
+contactButton.addEventListener('click', () => lenis.scrollTo('.contact'));
 
 function _(selector) {
     return document.querySelector(selector);
