@@ -1,5 +1,5 @@
 // Background Backward & Forward Text Animation
-const textTranslateX = 20;
+const textTranslateX = 25;
 
 gsap.set('.background-text h1:first-child', { xPercent: 0 });
 gsap.set('.background-text h1:last-child', { xPercent: - textTranslateX });
@@ -13,8 +13,8 @@ const textTimeline = gsap.timeline()
 
 ScrollTrigger.create({
     trigger: '.hero-text-container',
-    start: 'top top',
-    end: '+=700',
+    start: 'top-=300',
+    end: '+=1200',
     animation: textTimeline,
     scrub: 1,
 });
