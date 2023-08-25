@@ -1,5 +1,6 @@
-// Hero Text Character Reveal Animation
-const heroHeaders = new SplitType('.hero-text-container *');
+import { splitElements } from './utils.js';
+
+splitElements('.hero-text-container > *');
 
 gsap.to('.hero-text-container .char', {
     y: 0,

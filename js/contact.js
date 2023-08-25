@@ -1,8 +1,10 @@
+import { splitElements } from './utils.js';
+
 // Reduce blob size on contact section
 const blobAnimation = gsap.to('.blob', { width: '20rem', height: '20rem' });
 
-// Section header text reveal animation on scroll
-const contactHeaders = new SplitType('.contact h1, .contact h2');
+// Text reveal animation on scroll
+splitElements('.contact h1, .contact h2');
 
 gsap.set('.contact .char', {
     lineHeight: 0,
