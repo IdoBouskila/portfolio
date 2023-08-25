@@ -2,6 +2,7 @@
     --bg-color: #88a8bf;
     --orange-color: #ff4318;
     --green-color: #73e0a9;
+    --color-scrollbar-thumb: rgba(255, 255, 255, 0.2);
 }
 
 * {
@@ -11,6 +12,25 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-scrollbar-thumb) transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar-thumb);
+  border-radius: 50px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+*::-webkit-scrollbar {
+  background: transparent;
+  width: 6px;
 }
 
 body {
