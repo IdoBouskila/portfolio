@@ -440,25 +440,25 @@ section.contact {
     color: var(--bg-color);
 }
 
-@media (840px <= width <= 1200px) {
+@media (min-width: 840px) and (max-width: 1200px) {
     html {
         font-size: 12px;
     }
 }
 
-@media (600px <= width <= 840px) {
+@media (min-width: 680px) and (max-width: 840px) {
     html {
         font-size: 9.5px;
     }
 }
 
-@media (450px <= width <= 680px) {
+@media (min-width: 450px) and (max-width: 680px) {
     html {
         font-size: 6.5px;
     }
 }
 
-@media (width <= 450px) {
+@media (max-width: 450px) {
     html {
         font-size: 6px;
     }
