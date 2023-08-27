@@ -452,15 +452,20 @@ section.contact {
     }
 }
 
-@media (400px <= width <= 680px) {
+@media (450px <= width <= 680px) {
     html {
         font-size: 6.5px;
     }
 }
 
-@media (width <= 400px) {
+@media (width <= 450px) {
     html {
-        font-size: 5.5px;
+        font-size: 6px;
+    }
+
+    .projects-container .projects-right-side .glass-box {
+        width: 32.5rem;
+        height: 32.5rem;
     }
 }
 
