@@ -20,7 +20,7 @@ ScrollTrigger.create({
 });
 
 // Projects Reveal Animation
-gsap.set('.projects-container .glass-box img:not(:first-child)', { yPercent: 100 });
+gsap.set('.projects-container .glass-box img:not(:first-child)', { yPercent: 250 });
 
 const projectsAnimation = gsap.to('.projects-container .glass-box img:not(:first-child)', {
     yPercent: 0,
