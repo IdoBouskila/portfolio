@@ -36,4 +36,4 @@ gsap.ticker.add((time)=>{
 gsap.ticker.lagSmoothing(0);
 
 // navigate to contact section
-contactButton.addEventListener('click', () => lenis.scrollTo('.contact'));
+contactButton.addEventListener('click', () => lenis.scrollTo('.contact', { duration: 5 }));
