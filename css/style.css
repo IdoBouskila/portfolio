@@ -440,6 +440,30 @@ section.contact {
     color: var(--bg-color);
 }
 
+@media (840px <= width <= 1200px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (600px <= width <= 840px) {
+    html {
+        font-size: 9.5px;
+    }
+}
+
+@media (400px <= width <= 680px) {
+    html {
+        font-size: 6.5px;
+    }
+}
+
+@media (width <= 400px) {
+    html {
+        font-size: 4.8px;
+    }
+}
+
 @keyframes scroll {
     0% {
         translate: -50% 0;
