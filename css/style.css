@@ -124,14 +124,34 @@ section {
 }
 
 .hero header .contact-btn {
+    position: relative;
     display: grid;
-    padding: 0.7rem 1.25rem;
+    isolation: isolate;
+    padding: 0.7rem 1rem;
     place-items: center;
     border-radius: 12rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.hero header .contact-btn::before {
+    content: '';
+    position: absolute;
+    aspect-ratio: 1 / 1;
+    height: 3rem;
+    width: 3rem;
+    left: 0;
+    border-radius: 10rem;
     border: 1px solid rgba(255, 255, 255, 0.5);
     background: linear-gradient(314deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.2) 46.18%, rgba(255, 255, 255, 0.3) 100%);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
-    color: #fff;
+    z-index: -1;
+    transition: .4s all ease-in-out ;
+}
+
+.hero header .contact-btn:hover::before {
+    width: 100%;
+    height: 100%;
 }
 
 .hero .hero-text-container {
