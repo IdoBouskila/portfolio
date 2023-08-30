@@ -504,6 +504,10 @@ section.contact {
     html {
         font-size: 7px;
     }
+
+    .contact h2 {
+        font-size: 4.5rem;
+    }
 }
 
 @keyframes scroll {
