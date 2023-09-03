@@ -5,16 +5,13 @@ import { ScrollTrigger } from 'https://cdn.skypack.dev/gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-// navigate to contact section
-const contactButton = _('.contact-btn');
-contactButton.addEventListener('click', () => lenis.scrollTo('.contact', { duration: 5 }));
-
 const isMobileScreen = window.innerWidth <= 840;
 
 if(isMobileScreen) {
     return;
 }
 
+const contactButton = _('.contact-btn');
 const blob = _('.blob');
 
 window.addEventListener('pointermove', (e) => {
@@ -48,3 +45,6 @@ gsap.ticker.add((time)=>{
 });
 
 gsap.ticker.lagSmoothing(0);
+
+// navigate to contact section
+contactButton.addEventListener('click', () => lenis.scrollTo('.contact', { duration: 5 }));
