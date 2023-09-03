@@ -1,4 +1,8 @@
 import { splitElements } from './utils.js';
+import { gsap } from 'https://cdn.skypack.dev/gsap';
+import { ScrollTrigger } from 'https://cdn.skypack.dev/gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 // Reduce blob size on contact section
 const blobAnimation = gsap.to('.blob', { width: '20rem', height: '20rem' });

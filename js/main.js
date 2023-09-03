@@ -1,4 +1,10 @@
 import { _ } from './utils.js';
+import Lenis from 'https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.19/+esm';
+import { gsap } from 'https://cdn.skypack.dev/gsap';
+import { ScrollTrigger } from 'https://cdn.skypack.dev/gsap/ScrollTrigger'; 
+
+gsap.registerPlugin(ScrollTrigger);
+
 
 const contactButton = _('.contact-btn');
 const blob = _('.blob');
