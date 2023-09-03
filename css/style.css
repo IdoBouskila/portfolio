@@ -488,6 +488,23 @@ section.contact {
         font-size: 9.5px;
     }
 
+    .hero header .logo {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+    
+    .hero header .contact-btn {
+        font-size: 1.5rem;
+    }
+
+    .hero .hero-text-container small {
+        font-size: 2rem;
+    }
+
+    .hero .scroll-text {
+        font-size: 1.8rem;
+    }
+
     .projects-container .projects-right-side {
         display: none;
     }
