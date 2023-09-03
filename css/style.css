@@ -492,6 +492,20 @@ section.contact {
         display: none;
     }
 
+    .projects-container .projects-left-side {
+        display: flex;
+        flex-direction: column;
+        gap: 20vh;
+    }
+
+    .projects-container .projects-details {
+        height: auto;
+    }
+
+    .projects-container .projects-details div {
+        gap: 2rem;
+    }
+
     .hero .hero-text-container h1 {
         font-size: 7.8rem;
     }
