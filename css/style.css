@@ -205,6 +205,8 @@ section {
     overflow: hidden;
 }
 
+.hero .hero-text-container h1,
+.hero .hero-text-container h2,
 .hero .hero-text-container .char {
     background: linear-gradient(112deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.05) 100%);
     -webkit-background-clip: text;
@@ -421,6 +423,13 @@ section.contact {
     word-spacing: 100vw;
     filter: drop-shadow(0px 4px 13px rgba(0, 0, 0, 0.5));
     overflow: hidden;
+}
+
+.contact h1 {
+    background: linear-gradient(0deg, #F7DFD9 0%, #FFA78F 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .contact h1 .char {
