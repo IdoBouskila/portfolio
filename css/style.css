@@ -130,6 +130,7 @@ section {
     padding: 0.7rem 1rem;
     place-items: center;
     border-radius: 12rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: #fff;
 }
