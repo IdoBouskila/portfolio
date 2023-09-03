@@ -513,6 +513,10 @@ section.contact {
         font-size: 1.8rem;
     }
 
+    .hero .scroll-text .scroll-icon {
+        display: none;
+    }
+
     .projects-container .projects-right-side {
         display: none;
     }
