@@ -495,6 +495,14 @@ section.contact {
     
     .hero header .contact-btn {
         font-size: 1.5rem;
+        border-radius: 10rem;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        background: linear-gradient(314deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.2) 46.18%, rgba(255, 255, 255, 0.3) 100%);
+        box-shadow: rgba(0, 0, 0, 0.15)
+    }
+
+    .hero header .contact-btn::before {
+        display: none;
     }
 
     .hero .hero-text-container small {
