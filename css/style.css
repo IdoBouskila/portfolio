@@ -543,6 +543,15 @@ section.contact {
     .projects-left-side a {
         font-size: 2rem;
     }
+
+    .contact .links-container {
+        gap: 1.4rem;
+    }
+
+    .contact .links-container a {
+        width: 6.25rem;
+        height: 6.25rem;
+    }
 }
 
 @media (max-width: 460px) {
